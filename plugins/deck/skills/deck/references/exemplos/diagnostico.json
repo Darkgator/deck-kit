@@ -1,0 +1,99 @@
+{
+  "projeto": "Aprovação de notas fiscais (fictício)",
+  "nome": "Diagnóstico",
+  "tipo_deck": "diagnostico",
+  "slides": [
+    {"tipo": "capa", "eyebrow": "Exemplo fictício · Diagnóstico", "titulo": "Aprovação de notas fiscais de fornecedores",
+     "subtitulo": "Diagnóstico e recomendações", "data": "Equipe de melhoria · Exemplo"},
+
+    {"tipo": "decisao", "titulo": "Apresentar as recomendações e decidir juntos o que segue",
+     "subtitulo": "Ao final, para cada recomendação:",
+     "opcoes": [{"rotulo": "Seguir", "corpo": "segue como foi proposta"},
+                {"rotulo": "Ajustar", "corpo": "segue com as mudanças que a área propuser"},
+                {"rotulo": "Não seguir", "corpo": "sai do plano, com o motivo registrado"}],
+     "nota": "As recomendações não são imutáveis: quem conhece a operação é a própria área."},
+
+    {"tipo": "passos", "eyebrow": "Como chegamos até aqui", "titulo": "Passos do projeto",
+     "etapas": [{"etapa": "Entender", "detalhe": "Fase 1", "estado": "feito"}, {"etapa": "Mapear", "detalhe": "Fase 2", "estado": "feito"},
+                {"etapa": "Diagnosticar", "detalhe": "Fase 3", "estado": "aqui"}, {"etapa": "Redesenhar", "detalhe": "Fase 4"},
+                {"etapa": "Implementar", "detalhe": "Fase 5"}, {"etapa": "Operar", "detalhe": "Fase 6"}],
+     "nota": "As soluções de curto prazo começam em paralelo ao redesenho."},
+
+    {"tipo": "numero", "eyebrow": "O ponto de partida", "numero": "3.820",
+     "rotulo": "notas fiscais analisadas, de jan a set",
+     "apoios": [{"numero": "5", "rotulo": "áreas ouvidas"}, {"numero": "2", "rotulo": "sessões de observação"},
+                {"numero": "1", "rotulo": "extração do sistema financeiro"}],
+     "frase": "Foco: reduzir o tempo de aprovação sem perder o controle.",
+     "fonte": "extração do sistema financeiro, jan a set (dado fictício)",
+     "notas": "Exemplo fictício, sem relação com dado real."},
+
+    {"tipo": "fluxo", "eyebrow": "Recomendação 1 · O que muda", "titulo": "Menos digitação, aprovação mais rápida e rastreada.",
+     "trilhas": [
+       {"rotulo": "Hoje", "tom": "atual", "passos": ["Fornecedor envia a nota por e-mail", "Assistente digita a nota no sistema", "Gestor aprova por e-mail", "Assistente registra a aprovação no sistema"]},
+       {"rotulo": "Fase 1 · Portal", "tom": "novo", "passos": ["Fornecedor envia pelo portal", "Sistema lê a nota sozinho", "Gestor aprova por e-mail", "Assistente registra a aprovação"]},
+       {"rotulo": "Fase 2 · Sistema", "tom": "novo", "passos": ["Fornecedor envia pelo portal", "Sistema lê a nota sozinho", "Gestor aprova no sistema"]}],
+     "marca": {"texto": "aprovação registrada duas vezes", "de": 3, "ate": 4}},
+
+    {"tipo": "frentes", "formato": "cartoes", "eyebrow": "As recomendações", "titulo": "Quatro frentes, duas com protótipo",
+     "frentes": [
+       {"numero": "01", "titulo": "Receber as notas por um portal", "area": "Financeiro", "tipo": "Automação", "situacao": "Protótipo funcionando", "ok": true},
+       {"numero": "02", "titulo": "Ler a nota automaticamente", "area": "Financeiro", "tipo": "Automação", "situacao": "Prova de conceito feita", "ok": true},
+       {"numero": "03", "titulo": "Aprovar sozinhas as notas pequenas", "area": "Controladoria", "tipo": "Processo", "situacao": "Em desenho"},
+       {"numero": "04", "titulo": "Rever a alçada de aprovação por valor", "area": "Controladoria", "tipo": "Processo", "situacao": "Regra desenhada"}],
+     "nota": "Nenhuma exige contratar ferramenta nova no piloto."},
+
+    {"tipo": "recomendacao", "eyebrow": "Recomendação 1", "titulo": "Receber as notas por um portal",
+     "tipo_rec": "Tecnologia", "prioridade": "Prioridade alta", "altera_fluxo": "Altera o fluxo",
+     "fato": "Hoje as notas chegam por e-mail e são digitadas à mão no sistema, e a aprovação é registrada duas vezes: no e-mail e no sistema.",
+     "impactos": ["6 horas por semana de digitação", "2 registros por aprovação"],
+     "recomendacao": "Fase 1: portal de envio com leitura automática da nota. Fase 2: a aprovação acontece dentro do sistema, sem e-mail.",
+     "fonte": "observação das sessões, set (fictício)",
+     "notas": "Virada faseada."},
+
+    {"tipo": "implantacao", "eyebrow": "Recomendação 1 · Como vamos implantar", "titulo": "Portal agora, aprovação no sistema depois",
+     "fatos": [{"rotulo": "Virada", "valor": "Faseada", "detalhe": "portal agora, aprovação depois"},
+               {"rotulo": "Prazo", "valor": "6 semanas", "detalhe": "fase 1"},
+               {"rotulo": "Se der errado", "valor": "Volta ao e-mail", "detalhe": "sem perder nenhuma nota"}],
+     "etapas": [{"periodo": "Semana 1", "etapa": "Apresentar", "detalhe": "Combinar a operação assistida"},
+                {"periodo": "Semanas 2 e 3", "etapa": "Configurar e treinar", "detalhe": "Portal configurado e equipe treinada", "aprovacao": "Financeiro dá o início"},
+                {"periodo": "Semana 4", "etapa": "Virar a fase 1", "detalhe": "Notas novas entram só pelo portal"},
+                {"periodo": "Semanas 5 e 6", "etapa": "Acompanhar e preparar a fase 2", "detalhe": "Acompanhar a fila e levantar os requisitos da aprovação no sistema", "aprovacao": "Define: sistema ou portal"}]},
+
+    {"tipo": "cartoes", "eyebrow": "O que muda", "titulo": "O ciclo de aprovação cai de 14 para 6 dias",
+     "cartoes": [{"numero": "14", "rotulo": "dias úteis de ciclo médio, da chegada da nota ao pagamento liberado"},
+                 {"numero": "-60%", "rotulo": "no tempo de digitação"},
+                 {"numero": "4%", "rotulo": "das notas voltam por erro de dados"},
+                 {"numero": "6 dias", "rotulo": "meta de ciclo médio"}],
+     "faixa": "Ciclo medido da chegada da nota ao pagamento liberado, nas notas de jan a set.",
+     "nota": "Dados fictícios."},
+
+    {"tipo": "tabela", "eyebrow": "Manutenção", "titulo": "A área opera, a equipe de melhoria apoia",
+     "cabecalho": ["Quem", "Quando", "O que faz", "Como"],
+     "linhas": [["Financeiro", "No dia a dia", "Cadastra fornecedor e ajusta alçadas", "Numa tela, sem código"],
+                ["Equipe de melhoria", "Quando a regra muda", "Corrige, testa e o Financeiro aprova", "Apoio temporário"],
+                ["Prova de autonomia", "Antes de entregar", "Substituto faz um ajuste, seguindo o manual", "Sem o autor conduzindo"],
+                ["Tecnologia", "Fase posterior", "Integração e conta de serviço do portal", "Administrador do portal"]],
+     "larguras": [3, 3, 6, 5],
+     "nota": "Se o portal falhar num dia, o recebimento por e-mail continua valendo."},
+
+    {"tipo": "lista", "eyebrow": "Plano de ação", "titulo": "O que pedimos às áreas",
+     "itens": ["Decidir o piloto: quais frentes seguem, com dono e horas de cada área", "Aprovar a manutenção: a área opera, a equipe de melhoria apoia",
+               "Abrir as portas na Tecnologia: administrador do portal e parceria com o time responsável"]},
+
+    {"tipo": "cronograma", "eyebrow": "Próximas etapas", "titulo": "Do piloto à operação assistida",
+     "etapas": [{"chave": "diagnosticar", "etapa": "Diagnosticar", "periodo": "set a out", "entrega": "Recomendações apresentadas"},
+                {"chave": "redesenhar", "etapa": "Redesenhar", "periodo": "out", "entrega": "Cenários e fluxo futuro"},
+                {"chave": "implementar", "etapa": "Implementar", "periodo": "out a nov", "entrega": "Piloto e virada"},
+                {"chave": "operar", "etapa": "Operar", "periodo": "nov", "entrega": "Operação assistida"}],
+     "proximos": ["Decidir o piloto com as áreas", "Abrir as portas na Tecnologia"]},
+
+    {"tipo": "divisor", "numero": "02", "titulo": "Recomendações", "subtitulo": "O que muda e como vamos implantar",
+     "itens": ["Portal de recebimento", "Leitura automática", "Aprovação de notas pequenas", "Alçada por valor"]},
+
+    {"tipo": "decisao", "titulo": "Decisão sobre o piloto de 6 semanas",
+     "opcoes": [{"rotulo": "Seguir", "corpo": "Piloto de 6 semanas com devolutiva preliminar na semana seguinte, conforme o plano apresentado."},
+                {"rotulo": "Ajustar", "corpo": "Piloto segue com as mudanças que a área propuser, com novas datas registradas em ata."},
+                {"rotulo": "Não seguir", "corpo": "Piloto sai do plano, com o motivo registrado e a operação mantida como hoje."}],
+     "nota": "Decisão registrada por e-mail após a reunião."}
+  ]
+}

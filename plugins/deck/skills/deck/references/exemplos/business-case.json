@@ -1,0 +1,188 @@
+{
+  "projeto": "Projeto Exemplo (fictício)",
+  "nome": "Business case",
+  "tipo_deck": "business-case",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "Exemplo fictício · Business case",
+      "titulo": "Agilizar a análise de solicitações administrativas",
+      "subtitulo": "Business case: cenários, comparativo e recomendação",
+      "data": "Equipe de melhoria · Exemplo"
+    },
+    {
+      "tipo": "numero",
+      "eyebrow": "Situação e custo de não agir",
+      "numero": "R$ 480 mil",
+      "rotulo": "por ano em retrabalho e horas extras se nada mudar",
+      "apoios": [
+        {
+          "numero": "9 dias",
+          "rotulo": "de prazo médio hoje, contra meta de 5"
+        },
+        {
+          "numero": "18%",
+          "rotulo": "de crescimento do volume no semestre"
+        },
+        {
+          "numero": "25%",
+          "rotulo": "das solicitações voltam para correção"
+        }
+      ],
+      "frase": "Cada mês sem agir custa cerca de R$ 40 mil.",
+      "notas": "Exemplo fictício para testar o modelo. R$ 480 mil por ano equivalem a R$ 40 mil por mês."
+    },
+    {
+      "tipo": "texto",
+      "eyebrow": "Cenários",
+      "titulo": "Três caminhos, do mais simples ao mais completo",
+      "blocos": [
+        {
+          "rotulo": "Cenário 1 · Padronizar",
+          "corpo": "Padronizar as respostas mais frequentes e criar a fila única. Sem mudança de sistema. Ganho menor, risco baixo."
+        },
+        {
+          "rotulo": "Cenário 2 · Padronizar e automatizar",
+          "corpo": "O cenário 1 mais a automação da conferência nos três sistemas. Exige apoio da Tecnologia por 6 semanas."
+        },
+        {
+          "rotulo": "Cenário 3 · Redesenhar de ponta a ponta",
+          "corpo": "Fluxo novo com sistema único de acompanhamento. Maior ganho, maior prazo e dependência de investimento."
+        }
+      ]
+    },
+    {
+      "tipo": "tabela",
+      "eyebrow": "Comparativo",
+      "titulo": "Custo, prazo e ganho de cada cenário",
+      "cabecalho": [
+        "Critério",
+        "Cenário 1",
+        "Cenário 2",
+        "Cenário 3"
+      ],
+      "linhas": [
+        [
+          "Custo",
+          "R$ 30 mil",
+          "R$ 120 mil",
+          "R$ 450 mil"
+        ],
+        [
+          "Prazo",
+          "6 semanas",
+          "12 semanas",
+          "9 meses"
+        ],
+        [
+          "Ganho projetado por ano",
+          "R$ 150 mil",
+          "R$ 340 mil",
+          "R$ 420 mil"
+        ],
+        [
+          "Prós",
+          "Rápido e barato",
+          "Melhor retorno",
+          "Maior ganho total"
+        ],
+        [
+          "Contras",
+          "Ganho limitado",
+          "Depende da Tecnologia",
+          "Retorno só no 2º ano"
+        ]
+      ],
+      "larguras": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "nota": "Valores fictícios. Ganho projetado antes de qualquer captura em horas extras."
+    },
+    {
+      "tipo": "recomendacao",
+      "eyebrow": "Recomendação de cenário",
+      "titulo": "Recomendamos o cenário 2",
+      "tipo_rec": "Business case",
+      "prioridade": "Retorno em cerca de 4 meses",
+      "fato": "O cenário 2 recupera o investimento em cerca de 4 meses e entrega R$ 340 mil por ano: 2,3 vezes o ganho do cenário 1, com 4 vezes o custo.",
+      "impactos": [
+        "Custo de R$ 120 mil, contra R$ 30 mil do cenário 1",
+        "Depende de 6 semanas de apoio da Tecnologia",
+        "O cenário 3 fica como evolução, depois da medição"
+      ],
+      "recomendacao": "Seguir com o cenário 2, em duas fases: primeiro padronizar (cenário 1), depois automatizar a conferência. Reavaliar o cenário 3 após 6 meses de operação.",
+      "nota": "Números fictícios, para teste do modelo."
+    },
+    {
+      "tipo": "implantacao",
+      "eyebrow": "Implantação faseada",
+      "titulo": "Cenário 2 em duas fases",
+      "fatos": [
+        {
+          "rotulo": "Virada",
+          "valor": "Faseada",
+          "detalhe": "padronizar, depois automatizar"
+        },
+        {
+          "rotulo": "Prazo",
+          "valor": "12 semanas",
+          "detalhe": "duas fases de 6 semanas"
+        },
+        {
+          "rotulo": "Se der errado",
+          "valor": "Volta ao atual",
+          "detalhe": "a fase 2 pode ser pausada"
+        }
+      ],
+      "etapas": [
+        {
+          "periodo": "Semanas 1 e 2",
+          "etapa": "Preparar",
+          "detalhe": "Combinar escopo e dono de cada ação"
+        },
+        {
+          "periodo": "Semanas 3 a 6",
+          "etapa": "Fase 1: padronizar",
+          "detalhe": "Respostas padrão e fila única em operação",
+          "aprovacao": "Gerência da área"
+        },
+        {
+          "periodo": "Semanas 7 a 12",
+          "etapa": "Fase 2: automatizar",
+          "detalhe": "Conferência automática nos três sistemas",
+          "aprovacao": "Tecnologia e Segurança"
+        },
+        {
+          "periodo": "Depois",
+          "etapa": "Medir e decidir",
+          "detalhe": "Reavaliar o cenário 3 com 6 meses de dados",
+          "depois": true
+        }
+      ],
+      "precisa": "A fase 2 só começa com a fase 1 estável por 2 semanas.",
+      "nao_muda": "A decisão sobre cada caso continua com o analista."
+    },
+    {
+      "tipo": "decisao",
+      "titulo": "Decisão sobre o cenário 2",
+      "opcoes": [
+        {
+          "rotulo": "Seguir",
+          "corpo": "segue o cenário 2, em duas fases"
+        },
+        {
+          "rotulo": "Ajustar",
+          "corpo": "segue com as mudanças que a área propuser"
+        },
+        {
+          "rotulo": "Não seguir",
+          "corpo": "sai do plano, com o motivo registrado"
+        }
+      ],
+      "nota": "Decisão registrada por e-mail após a reunião."
+    }
+  ]
+}

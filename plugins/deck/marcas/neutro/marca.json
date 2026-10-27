@@ -1,0 +1,15 @@
+{
+  "nome": "Neutro",
+  "fonte": "Arial",
+  "cores": {
+    "primaria": "1F3A5F",
+    "secundaria": "2F6DB5",
+    "destaque": "D9480F",
+    "aviso": "F08C00",
+    "petalas": ["C92A2A", "D9480F", "F08C00", "F2C14E"],
+    "fundo": "F3F1EA",
+    "tinta": "1E1E1C",
+    "cinza": "5B6475"
+  },
+  "estilo": {"sem_travessao": false, "exigir_fonte": false, "vedados": []}
+}

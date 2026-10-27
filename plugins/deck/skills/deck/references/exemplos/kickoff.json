@@ -1,0 +1,56 @@
+{
+  "projeto": "Projeto Exemplo (fictício)",
+  "nome": "Kick-off",
+  "tipo_deck": "kickoff",
+  "slides": [
+    {"tipo": "capa", "eyebrow": "Exemplo fictício · Kick-off",
+     "titulo": "Agilizar a análise de solicitações administrativas",
+     "subtitulo": "Kick-off do projeto: contexto, benefícios, escopo, envolvidos e cronograma",
+     "data": "Equipe de melhoria · Exemplo"},
+
+    {"tipo": "texto", "eyebrow": "Contexto", "titulo": "Por que este projeto, e por que agora",
+     "blocos": [{"rotulo": "Situação", "corpo": "As solicitações administrativas são analisadas uma a uma, com conferência manual em três sistemas. O prazo médio de resposta é de 9 dias úteis, contra a meta de 5."},
+                {"rotulo": "Por que agora", "corpo": "O volume cresceu 18% no último semestre e a equipe não aumentou. Sem mudança, o prazo passa de 12 dias úteis até o fim do ano."}],
+     "nota": "Números ilustrativos, sem dado real.",
+     "notas": "Exemplo para testar o modelo. Em projeto real, cada número leva fonte e período."},
+
+    {"tipo": "cartoes", "eyebrow": "Benefícios", "titulo": "O que esperamos ganhar",
+     "cartoes": [{"numero": "-40%", "rotulo": "no prazo médio de resposta, de 9 para 5 dias úteis"},
+                 {"numero": "5 dias", "rotulo": "meta de prazo médio ao final do projeto"},
+                 {"numero": "+25%", "rotulo": "de capacidade da equipe, sem contratar"},
+                 {"numero": "90%", "rotulo": "das solicitações respondidas no prazo"}],
+     "faixa": "Indicadores acompanhados toda semana: prazo médio, percentual no prazo e fila em aberto.",
+     "nota": "Todos os números deste exemplo são fictícios."},
+
+    {"tipo": "tabela", "eyebrow": "Escopo", "titulo": "O que está dentro e o que está fora",
+     "cabecalho": ["Em escopo", "Fora de escopo"],
+     "linhas": [["Solicitações de segunda via e alteração cadastral", "Solicitações jurídicas e judiciais"],
+                ["Fluxo de recebimento, triagem e resposta", "Mudanças de sistema de grande porte"],
+                ["Padronização das respostas mais frequentes", "Reestruturação de equipes"],
+                ["Indicadores e rotina de acompanhamento", "Contratação de novas ferramentas"]],
+     "larguras": [1, 1]},
+
+    {"tipo": "tabela", "eyebrow": "Envolvidos", "titulo": "Quem participa e com qual papel",
+     "cabecalho": ["Área", "Papel no projeto"],
+     "linhas": [["Gerência da área dona do processo", "Decide e remove impedimentos"],
+                ["Equipe de atendimento", "Opera o processo e valida o desenho"],
+                ["Tecnologia", "Avalia e apoia ajustes nos sistemas"],
+                ["Equipe de melhoria", "Conduz o projeto e a medição"],
+                ["Jurídico e Compliance", "Revisa regras e textos padronizados"]],
+     "larguras": [1, 1]},
+
+    {"tipo": "numero", "eyebrow": "Orçamento", "numero": "R$ 120 mil",
+     "rotulo": "investimento total estimado do projeto",
+     "apoios": [{"numero": "70%", "rotulo": "em horas internas da equipe"},
+                {"numero": "20%", "rotulo": "em ajustes de ferramenta"},
+                {"numero": "10%", "rotulo": "em treinamento e comunicação"}],
+     "frase": "Estimativa de exemplo, a validar com a área financeira."},
+
+    {"tipo": "cronograma", "eyebrow": "Cronograma", "titulo": "Quatro etapas até o redesenho",
+     "etapas": [{"chave": "entender", "etapa": "Entender", "periodo": "semanas 1 e 2", "entrega": "Escopo e objetivo validados"},
+                {"chave": "mapear", "etapa": "Mapear", "periodo": "semanas 3 a 5", "entrega": "Fluxo atual e dores mapeados"},
+                {"chave": "diagnosticar", "etapa": "Diagnosticar", "periodo": "semanas 6 a 8", "entrega": "Causas e recomendações priorizadas"},
+                {"chave": "redesenhar", "etapa": "Redesenhar", "periodo": "semanas 9 a 12", "entrega": "Fluxo futuro e business case"}],
+     "proximos": ["Agendar as sessões de mapeamento com a área", "Receber a extração de dados dos últimos 6 meses", "Validar este escopo por e-mail"]}
+  ]
+}

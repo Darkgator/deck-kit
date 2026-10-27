@@ -1,0 +1,12 @@
+{
+  "name": "deck",
+  "version": "0.1.0",
+  "description": "Monta apresentações PowerPoint (.pptx) a partir de conteúdo bruto, no modelo da sua marca. O agente escolhe o formato de cada slide, valida, olha as imagens e corrige antes de entregar.",
+  "author": {
+    "name": "Alexandre Barroso de Miranda"
+  },
+  "homepage": "https://github.com/Darkgator/deck-kit",
+  "repository": "https://github.com/Darkgator/deck-kit",
+  "license": "MIT",
+  "keywords": ["pptx", "powerpoint", "slides", "apresentacao", "deck", "presentation"]
+}

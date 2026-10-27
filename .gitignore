@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+# saídas de geração e prévias
+*(previa)/
+*.tmp
+~$*
+# pacotes de marca com ativos próprios não entram no repositório
+marcas-privadas/

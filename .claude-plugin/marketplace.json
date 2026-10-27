@@ -1,0 +1,16 @@
+{
+  "name": "deck-kit",
+  "owner": {
+    "name": "Alexandre Barroso de Miranda"
+  },
+  "description": "Plugins para gerar apresentações com agentes de código.",
+  "plugins": [
+    {
+      "name": "deck",
+      "source": "./plugins/deck",
+      "description": "Monta apresentações PowerPoint (.pptx) no modelo da sua marca: o agente escolhe o formato de cada slide, valida, olha as imagens e corrige antes de entregar.",
+      "version": "0.1.0",
+      "category": "productivity"
+    }
+  ]
+}

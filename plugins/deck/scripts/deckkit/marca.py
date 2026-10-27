@@ -192,6 +192,7 @@ def _aplicar_config(m: Marca) -> Marca:
         m.exigir_fonte = bool(est["exigir_fonte"])
     if est.get("vedados"):
         m.vedados = list(m.vedados) + [str(t).lower() for t in est["vedados"]]
-    if "autoria" in cfg:
-        m.autoria = cfg["autoria"] or {}
+    aut = {k: v for k, v in (cfg.get("autoria") or {}).items() if v}
+    if aut:  # chaves da config valem sobre as da marca; o que a config não diz (ex.: cedido_a) vem da marca
+        m.autoria = {**m.autoria, **aut}
     return m

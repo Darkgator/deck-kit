@@ -166,6 +166,26 @@ class Marcas(unittest.TestCase):
                 mod_marca.CASA = antigo
 
 
+class Config(unittest.TestCase):
+    def test_config_pessoal_vale_sobre_a_marca_e_mescla_a_autoria(self):
+        with tempfile.TemporaryDirectory() as t:
+            antigo = mod_marca.CASA
+            mod_marca.CASA = Path(t) / "casa"
+            try:
+                origem = Path(t) / "cliente-x"
+                origem.mkdir()
+                (origem / "marca.json").write_text(json.dumps({"nome": "X", "autoria": {"cedido_a": "Cliente X"}}), encoding="utf-8")
+                self.assertEqual(mod_marca.localizar(str(origem)).rodape_autoria(), "")  # sem autor, sem nota
+                mod_marca.CASA.mkdir(parents=True)
+                (mod_marca.CASA / "config.json").write_text(json.dumps(
+                    {"estilo": {"sem_travessao": True}, "autoria": {"autor": "Fulana", "cedido_a": ""}}), encoding="utf-8")
+                m = mod_marca.localizar(str(origem))
+                self.assertTrue(m.sem_travessao)
+                self.assertIn("Fulana. Cedido a Cliente X.", m.rodape_autoria())
+            finally:
+                mod_marca.CASA = antigo
+
+
 class Versoes(unittest.TestCase):
     def test_versao_nova_nunca_sobrescreve_e_detecta_edicao(self):
         with tempfile.TemporaryDirectory() as t:
